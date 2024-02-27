@@ -98,5 +98,5 @@ __blobstorage__
 __queuestorage__
 __azurite_db*__.json
 
-input_file.txt
-output_file.txt
+input.txt
+output.txt

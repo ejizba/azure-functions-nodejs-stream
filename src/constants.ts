@@ -1,8 +1,8 @@
 import * as path from 'path';
 
 export const appRoot = path.join(__dirname, '..', '..');
-export const inputFilePath = path.join(appRoot, 'input_file.txt');
-export const outputFilePath = path.join(appRoot, 'output_file.txt');
+export const inputFilePath = path.join(appRoot, 'input.txt');
+export const outputFilePath = path.join(appRoot, 'output.txt');
 
 export const oneMb = 1024 * 1024;
 
