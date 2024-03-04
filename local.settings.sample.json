@@ -1,0 +1,8 @@
+{
+    "IsEncrypted": false,
+    "Values": {
+        "AzureWebJobsStorage": "",
+        "FUNCTIONS_WORKER_RUNTIME": "node",
+        "FUNCTIONS_REQUEST_BODY_SIZE_LIMIT": "4294967296"
+    }
+}
