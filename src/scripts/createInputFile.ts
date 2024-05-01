@@ -1,6 +1,5 @@
 import { inputFileSize, inputFilePath, tempDir } from '../constants';
 import { WriteStream, createWriteStream } from 'fs';
-import * as crypto from 'crypto';
 import { access, mkdir } from 'fs/promises';
 
 async function createInputFile(): Promise<void> {
@@ -13,8 +12,10 @@ async function createInputFile(): Promise<void> {
 
     const file = createWriteStream(inputFilePath);
     let length = 0;
+    const data = Buffer.from(
+        'Azure Functions is an event-driven, serverless compute platform that helps you develop more efficiently using the programming language of your choice.\n'
+    );
     while (length < inputFileSize) {
-        const data = crypto.randomBytes(1024);
         length += data.length;
         await writeData(file, data);
     }
