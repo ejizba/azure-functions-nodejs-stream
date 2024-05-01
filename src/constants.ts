@@ -5,6 +5,14 @@ export const tempDir = path.join(repoRoot, 'temp');
 export const inputFilePath = path.join(tempDir, 'input.txt');
 export const outputFilePath = path.join(tempDir, 'output.txt');
 
+// Change this boolean to turn the streaming feature on and off
+export const enableHttpStream = true;
+
+// Change this boolean if you want to simulate different ways of sending a request
+// true: request body is streamed in chunks (which will set the header "Transfer-Encoding" to "chunked")
+// false: request body is loaded into memory and sent as a single buffer/chunk
+export const sendRequestInChunks = true;
+
 export const oneMb = 1024 * 1024;
 
 // approximately 96 mb

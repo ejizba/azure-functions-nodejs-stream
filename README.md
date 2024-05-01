@@ -24,14 +24,16 @@ The app in this repo streams a large file (96mb by default) named `input.txt` to
 
 2. Run `npm install`.
 3. Run `npm start`. This will build the app, create the large input file, and start the app.
-4. If you want to simulate streaming a request, run `npm run streamRequest`.
-5. If you want to simulate streaming a response, run `npm run streamResponse`.
-6. You should see progress in the console as the file is processed. It happens fast for a 96mb file, but as long as you see a chunk count greater than 1, you know your data was streamed.
+4. Leave the previous terminal running and open a new terminal to execute a function.
+    - If you want to simulate streaming a request, run `npm run streamRequest`.
+    - If you want to simulate streaming a response, run `npm run streamResponse`.
+5. You should see progress in the console as the file is processed. It happens fast for a 96mb file, but as long as you see a chunk count greater than 1, you know your data was streamed.
 
 ## App contents
 
 - `src/functions/*`: The actual functions for your app
 - `src/scripts/*`: Scripts used to create the large file and send requests to Azure Functions
+- `src/constants.ts`: A file with several settings that you can change to modify the behavior of the app.
 
 ## Next steps
 
